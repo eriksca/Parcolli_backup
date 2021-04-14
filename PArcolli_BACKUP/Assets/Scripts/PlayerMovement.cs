@@ -86,11 +86,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A) || DetectButtonPressure.leftPressed)
         {
-            transform.Rotate(-Vector3.up * 90f * Time.deltaTime * 4f);
+            transform.Rotate(-Vector3.up * 90f * Time.deltaTime * 2f);
         }
         if (Input.GetKey(KeyCode.D) || DetectButtonPressure.rightPressed)
         {
-            transform.Rotate(Vector3.up * 90f * Time.deltaTime * 4f);
+            transform.Rotate(Vector3.up * 90f * Time.deltaTime * 2f);
         }
 
         /* if (isGrounded && Input.GetKeyDown(KeyCode.Space))
